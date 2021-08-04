@@ -5,7 +5,7 @@ const key = "8GW8G6u4fSfg9gAL3gdOnjgJG678wwkv"
 // Request the city input from the API
 const requestCity = async (location) => {
     // link to fetch city data
-    const link = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const link = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     // send a request using the api key and the city name 
     const request = `?apikey=${key}&q=${location}`
     // fetch the  data through the link 
@@ -17,7 +17,7 @@ const requestCity = async (location) => {
 // Request the current weather condition of that location using the city Key 
 const weather = async (id) => {
     // link to fetch the city current weather condition using the city key and app's api
-    const link = `http://dataservice.accuweather.com/currentconditions/v1/{locationKey}`
+    const link = `https://dataservice.accuweather.com/currentconditions/v1/{locationKey}`
     const request = `${id}?apikey=${key}` 
     const result = await fetch(link + request);
     const output = await result.json()
