@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <title> Weather App </title>
+</head>
+
+<body class="">
+    <div class="main ">
+        <div class="location-search container  ">
+            <h1 class="jumbotron display 4 text-center "> Weather App </h1>
+            <p class="text-center"> Search for the weather conditions in any city of the world's city </p>
+            <form action="" class="location col-sm-6 m-auto">
+                <!-- input field for the user's location  -->
+                <input type="text" name="location" id="location" class="search-city form-control " autocomplete=on
+                    placeholder="Enter city name ">
+            </form>
+            <!-- Search results  -->
+            <div class="location-result d-flex ">
+                <div class="result ">
+                    <div class="condition px-4 mx-2 ">
+                        <p> Weather Information </p>
+                    </div>
+                    <div class=" temp d-flex">
+                        <div class="temperature px-2">
+                            <span> -- </span>
+                            <span> &deg;C </span>
+                        </div>
+                        <div class="icon">
+                            <img src="" alt=" ">
+                        </div>
+                    </div>
+                </div>
+                <div class="mx-2 " >
+                    <div class="mx-2 date "> Date </div>
+                    <div class="mx-2 city"> City </div>
+                    <div class="mx-2 time"> Time </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="scripts/script.js"> </script>
+    <script src="scripts/app.js"> </script>
+</body>
+
+</html>
