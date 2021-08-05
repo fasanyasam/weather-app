@@ -14,43 +14,42 @@
     <title> Weather App </title>
 </head>
 
-<body class="">
-    <div class="main ">
-        <div class="location-search container  ">
-            <h1 class="jumbotron display 4 text-center "> Weather App </h1>
-            <p class="text-center"> Search for the weather conditions in any city of the world's city </p>
-            <form action="" class="location col-sm-6 m-auto">
-                <!-- input field for the user's location  -->
-                <input type="text" name="location" id="location" class="search-city form-control " autocomplete=on
-                    placeholder="Enter city name ">
+<body>
+    <div class="mainbody text-white">
+        <!-- Heading and search form field  -->
+        <div class="search-section">
+            <h1 class="display-2 text-center text-white  pt-4"> iWeather </h1>
+            <form action="" class="change-location d-flex flex-column"> <br><br>
+                <input type="text" class=" form form-control " name="city" placeholder="Enter city name ">
             </form>
-            <!-- Search results  -->
-            <div class="location-result d-flex ">
-                <div class="result ">
-                    <div class="condition px-4 mx-2 ">
-                        <p> Weather Information </p>
-                    </div>
-                    <div class=" temp d-flex">
-                        <div class="temperature px-2">
-                            <span> -- </span>
-                            <span> &deg;C </span>
-                        </div>
-                        <div class="icon">
-                            <img src="" alt=" ">
-                        </div>
-                    </div>
+        </div>
+        <!-- Weather details display -->
+        <div class="weather-detail d-flex ">
+            <div class="detail d-flex flex-column px-4 ">
+                <div class="condition mx-2">
+                    
                 </div>
-                <div class="mx-2 " >
-                    <div class="mx-2 date "> Date </div>
-                    <div class="mx-2 city"> City </div>
-                    <div class="mx-2 time"> Time </div>
+                <div class="degree d-flex">
+                    <!-- Template for recording the temperature  -->
+                    <div class="centegrate">
+                        <span class="display-3">--</span>
+                        <span class="display-4">&deg;C</span>
+                    </div>
+                    
                 </div>
+            </div>
+            <div class="weather-info d-flex px-3">
+                <div class="mx-4 date ">Date</div>
+                <div class="mx-4 city ">City</div>
+                
+            </div>
             </div>
         </div>
 
-    </div>
-    <script src="scripts/script.js"> </script>
-    <script src="scripts/app.js"> </script>
-</body>
+        <!-- <script src="scripts/apps.js"></script>  -->
+        <script src="scripts/script.js"></script> 
+        
 
+        
+</body>
 </html>
